@@ -1,0 +1,5 @@
+#
+# cat .profileADD >> .profile
+
+export ENV=$HOME/.kshrc
+

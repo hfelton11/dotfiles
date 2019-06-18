@@ -1,0 +1,3 @@
+# hjf last modified: 2018-10-07 00:50
+alias ll='ls -al $"'
+alias tat='tmux new-session -s `basename $PWD`'
