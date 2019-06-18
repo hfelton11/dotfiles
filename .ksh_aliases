@@ -1,9 +1,0 @@
-l ( ) { /bin/ls -aldFh "$@"; } 
-ll ( ) { /bin/ls -alFh | more; } 
-# redirect into ~/hold directory...
-r1 ( ) { "$*" > ~/hold/"$1".stdout; }
-r1d ( ) { "$*" > ~/hold/"$1".`date +%Y%m%d-%H%M`.stdout; }
-r2d ( ) { "$*" 2> ~/hold/"$1".`date +%Y%m%d-%H%M`.stderr; }
-r2 ( ) { "$*" > ~/hold/"$1".`date +%Y%m%d-%H%M`.stdout 2> ~/hold/"$1".`date +%Y%m%d-%H%M`.stderr; }
-#alias ll='ls -alFh|more'
-#alias l='ls -aldFh'
