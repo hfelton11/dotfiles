@@ -1,0 +1,6 @@
+#
+# cat APPEND.mailrc >> .mailrc
+#
+
+set askbcc
+set record /home/hfeltonadmin/mbox_sent
