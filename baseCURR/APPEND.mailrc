@@ -1,6 +1,8 @@
 #
 # cat APPEND.mailrc >> .mailrc
 #
-
+set dot
+set nosave
+#  recording sent-messages doesnt seem to work, so...
 set askbcc
-set record /home/hfeltonadmin/mbox_sent
+#set record ~/mbox_sent
