@@ -1,0 +1,9 @@
+#
+# mv .gitconfig .gitconfig.orig ; cp REPLACE.gitconfig .gitconfig
+# 
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = hfeltonadmin
+	email = hfeltonadmin@hfelton.openbsd.amsterdam
+# 
