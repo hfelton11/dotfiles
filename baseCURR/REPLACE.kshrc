@@ -9,5 +9,7 @@ export CVSROOT
 
 . ~/.ksh_aliases
 
-# assumes games and pkg_add/cowsay...
-fortune | cowsay
+# assumes installed/games and pkg_add/cowsay...
+if [ -x /usr/games/fortune -a -x /usr/local/bin/cowsay ]; then
+	fortune | cowsay
+fi
