@@ -11,5 +11,5 @@ export CVSROOT
 
 # assumes installed/games and pkg_add/cowsay...
 if [ -x /usr/games/fortune -a -x /usr/local/bin/cowsay ]; then
-	fortune | cowsay
+	/usr/games/fortune   |   /usr/local/bin/cowsay
 fi
