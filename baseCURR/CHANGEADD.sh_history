@@ -1,3 +1,5 @@
 #
-# 1) tuoch .sh_history
+# 1) touch ~/.sh_history
 #
+# as mentioned in kenv-file
+# modified: hjf  2021-03-09 @ 1515

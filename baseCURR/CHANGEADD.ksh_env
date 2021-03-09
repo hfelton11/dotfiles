@@ -1,0 +1,20 @@
+#
+# 1) cat CHANGEADD.ksh_env >> .ksh_env
+# 2) <manual edit/change/add of .ksh_env>
+#
+# modified: hjf 2021-03-09 @ 1500
+#
+
+# see possibilities in ../baseXTRA, but for now...
+
+CVSROOT=anoncvs@anoncvs2.usa.openbsd.org:/cvs
+export CVSROOT
+
+PS1medium='\u@\h_\w/$ '
+PS1long="  [\t - \d]\n--\u@\H:\w[\s]\n$ "
+PS1="  [\t - \d]\n--\u@\H:\w[\s]\n$ "
+DOAS_PS1="  [\t - \d]\n--\u@\H:\w[\s]\n# "
+export PS1 DOAS_PS1
+
+export HISTFILE=~/.sh_history
+

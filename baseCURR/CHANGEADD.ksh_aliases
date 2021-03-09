@@ -1,18 +1,18 @@
 #
 # 1) cat CHANGEADD.ksh_aliases >> .ksh_aliases
-# 2) mv .ksh_aliases .ksh_aliases.orig ; cp ...
-# 3) <manual edit/change/add of .ksh_aliases>
+# 2) <manual edit/change/add of .ksh_aliases>
 #
-# 0) mkdir ~/hold
+# modified: hjf 2021-03-09 @ 1400
 #
 
-l ( ) { /bin/ls -aldFh "$@"; } 
-ll ( ) { /bin/ls -alFh | more; } 
+# see possibilities in ../baseXTRA, but for now...
 
-# redirect into ~/hold directory...
-r1 ( ) { "$*" > ~/hold/"$1".stdout; }
-r1d ( ) { "$*" > ~/hold/"$1".`date +%Y%m%d-%H%M`.stdout; }
-r2d ( ) { "$*" 2> ~/hold/"$1".`date +%Y%m%d-%H%M`.stderr; }
-r2 ( ) { "$*" > ~/hold/"$1".`date +%Y%m%d-%H%M`.stdout 2> ~/hold/"$1".`date +%Y%m%d-%H%M`.stderr; }
-#alias ll='ls -alFh|more'
-#alias l='ls -aldFh'
+# ending-blank assumes further-chars
+# ie - ignore $1 $* crap in bash...
+alias ll='ls -alFh '
+alias lld='ls -alFhd '
+# no pipes allowed...
+#alias lls="{ ls -alFhS \$* | head; } "
+alias lls='ls -alFhS '
+#alias llt="{ ls -alFht \$1 | more; } "
+alias llt='ls -alFht '
