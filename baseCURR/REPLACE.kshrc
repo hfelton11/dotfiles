@@ -6,17 +6,17 @@
 
 # assumes global environment $ENV/$HOME
 # call globals first...
-if [ -f /etc/ksh.kshrc ]; then
+if [ -r /etc/ksh.kshrc ]; then
     . /etc/ksh.kshrc
 fi
 
 # call local environment next...
-if [ -f ~/ksh.ksh_env ]; then
+if [ -r ~/.ksh_env ]; then
     . ~/.ksh_env
 fi
 
 # call local aliases last...
-if [ -f ~/ksh.ksh_aliases ]; then
+if [ -r ~/.ksh_aliases ]; then
     . ~/.ksh_aliases
 fi
 

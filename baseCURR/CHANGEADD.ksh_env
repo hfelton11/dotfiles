@@ -12,7 +12,7 @@ export CVSROOT
 
 PS1medium='\u@\h_\w/$ '
 PS1long="  [\t - \d]\n--\u@\H:\w[\s]\n$ "
-PS1="  [\t - \d]\n--\u@\H:\w[\s]\n$ "
+PS1="  [\t - \d] {\s:!}\n--\u@\H:\w[!]\n$ "
 DOAS_PS1="  [\t - \d]\n--\u@\H:\w[\s]\n# "
 export PS1 DOAS_PS1
 
