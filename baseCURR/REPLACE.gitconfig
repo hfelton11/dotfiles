@@ -1,9 +1,21 @@
 #
 # mv .gitconfig .gitconfig.orig ; cp REPLACE.gitconfig .gitconfig
 # 
+# modified: hjf 2021-03-09 @ 1630
+# 
 # This is Git's per-user configuration file.
+# Please adapt and/or uncomment the following lines:
 [user]
-# Please adapt and uncomment the following lines:
-	name = hfeltonadmin
+	name = hfelton11
 	email = hfeltonadmin@hfelton.openbsd.amsterdam
+[credential]
+	#helper = cache
+	#helper = store
+	# def 15min, want 2hr
+	helper = cache --timeout 7200
+[pull]
+	# false merge, true rebase, ff ignore-issues...
+	#rebase = false
+	#rebase = true
+	ff = only
 # 
