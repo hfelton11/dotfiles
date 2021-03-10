@@ -1,23 +1,23 @@
 #
 # mv .kshrc .kshrc.orig ; cp REPLACE.kshrc .kshrc
 # 
-# modified: hjf 2021-03-09 @ 1330
+# modified: hjf 2021-03-09 @ 1700
 #
 
 # assumes global environment $ENV/$HOME
 # call globals first...
-if [ -x /etc/ksh.kshrc ]; then
+if [ -f /etc/ksh.kshrc ]; then
     . /etc/ksh.kshrc
 fi
 
 # call local environment next...
-if [ -x ~/ksh.ksh_env ]; then
-    . ~/ksh.ksh_env
+if [ -f ~/ksh.ksh_env ]; then
+    . ~/.ksh_env
 fi
 
 # call local aliases last...
-if [ -x ~/ksh.ksh_aliases ]; then
-    . ~/ksh.ksh_aliases
+if [ -f ~/ksh.ksh_aliases ]; then
+    . ~/.ksh_aliases
 fi
 
 # call fun assumes installed/games and pkg_add/cowsay...
