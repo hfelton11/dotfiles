@@ -1,0 +1,12 @@
+.DS_Store
+#
+# 1) cat CHANGEADD.gitignore_global >> .gitignore_global
+# 2) <manual edit/change/add of .gitignore_global>
+#
+# modified: hjf 2021-03-12 @ 0500
+#
+
+# see possibilities in ../baseXTRA, but for now...
+
+.DS_Store
+

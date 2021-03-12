@@ -1,13 +1,15 @@
 #
 # mv .gitconfig .gitconfig.orig ; cp REPLACE.gitconfig .gitconfig
 # 
-# modified: hjf 2021-03-09 @ 1630
+# modified: hjf 2021-03-12 @ 0430
 # 
 # This is Git's per-user configuration file.
 # Please adapt and/or uncomment the following lines:
 [user]
-	name = hfelton11
-	email = hfeltonadmin@hfelton.openbsd.amsterdam
+	name = Harold Felton
+	email = work@hfelton.com
+#	name = hfelton11
+#	email = hfeltonadmin@hfelton.openbsd.amsterdam
 [credential]
 	#helper = cache
 	#helper = store
@@ -18,4 +20,5 @@
 	#rebase = false
 	#rebase = true
 	ff = only
-# 
+[core]
+	excludesfile = /home/hfeltonadmin/.gitignore_global
